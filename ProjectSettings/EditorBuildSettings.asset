@@ -30,5 +30,11 @@ EditorBuildSettings:
     path: Assets/Scenes/LEVELINFINI.unity
     guid: e839f2057d017714bbb00fff20220729
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
+      guid: 4aa900a84e308dc46b405e05e0b81555, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9e11bb0ce01f2104c98656d080a14b55,
+      type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: e14de8c3c4baf2847bf35785511c227a, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 3a3b9e84308e885448a60b242bcc9ed5, type: 2}
