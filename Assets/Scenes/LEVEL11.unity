@@ -13064,9 +13064,9 @@ MonoBehaviour:
   bouteille1: 0
   bouteille2: 0
   bouteille3: 0
-  time: 300
+  time: 180
   argent: 0
-  argentObjectif: 1000
+  argentObjectif: 400
   textUiPomme: {fileID: 782338117}
   textUiMiel: {fileID: 377837101}
   textUiBouteille1: {fileID: 1549731222}

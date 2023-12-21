@@ -10,7 +10,7 @@ public class launch2 : MonoBehaviour
 
 public void launchLevel2()
     {
-        SceneManager.LoadScene("LEVEL1");
+        SceneManager.LoadScene("LEVEL11");
 
     }
 }

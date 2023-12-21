@@ -26,8 +26,29 @@ public class ClicRecette : MonoBehaviour, ITouchable
         if(id!=recetteEnCours)
         {
             variableManager.setRecetteActive(id);
-            creerBoisson.setMielDonne(0);
-            creerBoisson.setPommeDonne(0);
+
+            if(variableManager.reccetteActive==1)
+            {
+                creerBoisson.setMielDonne(0);
+                creerBoisson.setPommeDonne(0);
+                creerBoisson.setMielBesoin(0);
+                creerBoisson.setPommeBesoin(2);
+            }
+            else if (variableManager.reccetteActive == 2)
+            {
+                creerBoisson.setMielDonne2(0);
+                creerBoisson.setPommeDonne2(0);
+                creerBoisson.setMielBesoin2(0);
+                creerBoisson.setPommeBesoin2(1);
+            }
+            else if (variableManager.reccetteActive == 3)
+            {
+                creerBoisson.setMielDonne2(0);
+                creerBoisson.setPommeDonne2(0);
+                creerBoisson.setMielBesoin2(1);
+                creerBoisson.setPommeBesoin2(2);
+            }
+
 
         }
     }

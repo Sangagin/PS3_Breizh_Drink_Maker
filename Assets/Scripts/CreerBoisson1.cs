@@ -47,6 +47,15 @@ public class CreerBoisson1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        quantMiel.text = "x ";//+ (mielBesoin);
+        quantPomme.text = "x "; //+ (pommeBesoin);
+
+        quantMiel2.text = "x "; //+ (mielBesoin2);
+        quantPomme2.text = "x "; //+ (pommeBesoin2);
+
+        quantMiel3.text = "x ";// + (mielBesoin3);
+        quantPomme3.text = "x "; //+ (pommeBesoin3);
+
     }
 
     // Update is called once per frame

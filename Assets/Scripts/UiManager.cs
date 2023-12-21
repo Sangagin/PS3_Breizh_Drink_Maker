@@ -30,6 +30,9 @@ public class UiManager : MonoBehaviour
     public TextMeshProUGUI textUiBouteille1;
     public TextMeshProUGUI textUiBouteille2;
     public TextMeshProUGUI textUiBouteille3;
+    public TextMeshProUGUI textUiBouteille4;
+    public TextMeshProUGUI textUiBouteille5;
+    public TextMeshProUGUI textUiBouteille6;
     public TextMeshProUGUI textUiTime;
     public TextMeshProUGUI textUiArgent;
     public TextMeshProUGUI textUiArgentObjectif; 
@@ -82,11 +85,11 @@ public class UiManager : MonoBehaviour
 
 
         textUiBouteille1.text = "x " + bouteille1;
-
+        textUiBouteille4.text = textUiBouteille1.text;
         textUiBouteille2.text = "x " + bouteille2;
-
+        textUiBouteille5.text = textUiBouteille2.text;
         textUiBouteille3.text = "x " + bouteille3;
-
+        textUiBouteille6.text = textUiBouteille3.text;
         textUiTime.text = "Temps : " + time;
 
         textUiArgent.text = "Argent : " + argent;

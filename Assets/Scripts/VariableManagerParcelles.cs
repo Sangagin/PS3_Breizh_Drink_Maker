@@ -38,7 +38,7 @@ public class VariableManagerParcelles : MonoBehaviour
             listeParcelles.id = i;
         }
 
-
+        clientCree = false;
 
     }
 

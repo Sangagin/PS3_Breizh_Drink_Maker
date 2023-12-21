@@ -372,12 +372,17 @@ public class PlanterUnTruc : MonoBehaviour, ITouchable
 
         if (etat == 2)
         {
-            plantTemp.SetActive(false );
+
             for (int j = 0; j < parcellesAsso.Count; j++)
             {
                 var recupAutresParcelles = parcellesAsso[j].GetComponent<PlanterUnTruc>();
                 if (recupAutresParcelles.etat == 2)
                 {
+                    if (recupAutresParcelles.plantTemp != null)
+                    {
+                        recupAutresParcelles.plantTemp.SetActive(false);
+
+                    }
                     recupAutresParcelles.etat = 0;
                     
                 }

@@ -13,6 +13,10 @@ public class DonnerCommande : MonoBehaviour,ITouchable
     public int nbBouteille2;
     public int nbBouteille3;
 
+    public GameObject posArr1;
+    public GameObject posArr2;
+    public GameObject posArr3;
+
     public void OnTouchedDown(Vector3 touchPosition)
     {
         store = transform.position;
@@ -61,6 +65,7 @@ public class DonnerCommande : MonoBehaviour,ITouchable
                 Destroy(other.gameObject);
             
             }
+
 
 
             

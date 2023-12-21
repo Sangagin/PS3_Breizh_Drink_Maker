@@ -43,6 +43,8 @@ public class PasserComande : MonoBehaviour,ITouchable
         bouteilleType1Voulus = Random.Range(ui.commande1, ui.commande2);
         bouteilleType2Voulus = Random.Range(ui.commande3, ui.commande4);
         bouteilleType3Voulus = Random.Range(ui.commande5, ui.commande6);
+
+
         if (place1.libre == 0)
         {
             target = place1.transform;
@@ -57,15 +59,20 @@ public class PasserComande : MonoBehaviour,ITouchable
             target = place3.transform;
 
         }
-
     }
 
     // Update is called once per frame
     void Update()
     {
 
+
+
         var step = speed * Time.deltaTime; // calculate distance to move
-        transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+        if (target != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+
+        }
 
 
     }

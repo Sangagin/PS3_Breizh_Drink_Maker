@@ -7,6 +7,8 @@ public class BoutonOuiTouch : MonoBehaviour, ITouchable
     public VariableManagerParcelles variableManagerParcelles;
     public BoutonManager boutonManager;
 
+    public GameObject pomme;
+
     public void OnTouchedDown(Vector3 touchPosition)
     {
 
@@ -24,6 +26,9 @@ public class BoutonOuiTouch : MonoBehaviour, ITouchable
                 }
               */
                 parcelles.etat = 1;
+
+                pomme.SetActive(false);
+
                // parcelles.encours = true;
             }
         }
